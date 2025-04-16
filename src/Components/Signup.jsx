@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { signup } from "../api";
-import { saveUser } from "../Utils/LocalStorage";
+import { saveUser } from "../utils/localStorage";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 function Signup() {

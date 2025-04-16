@@ -1,8 +1,8 @@
 // src/Components/Login.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { login } from "../Api";
-import { saveUser } from "../Utils/LocalStorage";
+import { login } from "../api";
+import { saveUser } from "../utils/localStorage";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 function Login() {

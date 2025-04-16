@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import HomeNav from './HomeNav';
-import { completeTask, getTransactions } from '../Api';
+import { completeTask, getTransactions } from '../api';
 
 const TransactionRecord = () => {
   const [transactions, setTransactions] = useState([]);

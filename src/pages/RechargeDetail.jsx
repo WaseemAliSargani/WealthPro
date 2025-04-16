@@ -3,7 +3,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import HomeNav from '../Components/HomeNav';
 import { FaDollarSign } from 'react-icons/fa';
 import { SiBinance } from 'react-icons/si';
-import { deposit, getUser } from '../Api';
+import { deposit, getUser } from '../api';
 import bep20 from '../assets/Investment/bep20-usdt.webp';
 import trc20 from '../assets/Investment/trc20-usdt.jpg';
 import trx from '../assets/Investment/trx.webp';
