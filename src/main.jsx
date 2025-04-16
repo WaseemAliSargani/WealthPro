@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
 import Login from "./Components/Login.jsx";
 import Signup from "./Components/Signup.jsx";
-import { setItem } from "./Utils/LocalStorage";
+import { setItem } from "./utils/localStorage.js";
 import "./index.css";
 
 setItem("invitations", ["INVITE123", "INVITE456"]);
