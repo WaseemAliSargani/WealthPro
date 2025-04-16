@@ -19,7 +19,7 @@ import {
   FaEnvelope,
 } from 'react-icons/fa';
 import { HiOutlineDocumentReport } from 'react-icons/hi';
-import { withdraw, getUser, getTransactions } from '../Api';
+import { withdraw, getUser, getTransactions } from '../api';
 
 const Withdraw = () => {
   const navigate = useNavigate();
