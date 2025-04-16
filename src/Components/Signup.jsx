@@ -1,7 +1,7 @@
 // src/Components/Signup.jsx
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { signup } from "../Api";
+import { signup } from "../api";
 import { saveUser } from "../Utils/LocalStorage";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
