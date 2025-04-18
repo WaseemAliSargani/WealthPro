@@ -76,7 +76,7 @@ const Withdraw = () => {
     try {
       console.log('Withdraw attempt:', { amount: withdrawalAmount, address });
       await withdraw(withdrawalAmount, address, password);
-      alert('Withdrawal requested successfully - Never Withdraw if already in pending otherwise fund not Receive');
+      alert('Withdrawal requested successfully --- Never Withdraw if already in pending otherwise fund not Receive');
       setAmount('');
       setAddress('');
       setPassword('');

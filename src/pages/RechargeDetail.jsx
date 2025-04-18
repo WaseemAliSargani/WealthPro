@@ -62,7 +62,7 @@ const RechargeDetail = () => {
       await deposit(amount, txid, planName); // Pass planName to deposit
       setIsLoading(false);
       setPopupMessage(
-        "Your Recharge is in process. Plan will activate after transaction approval (1-5 hours). Have a nice day!"
+        "Your Recharge is in process. Plan will activate after transaction approval (1-3 hours). Have a nice day!"
       );
       setTxid(''); // Clear the form
       setTimeout(() => {

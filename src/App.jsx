@@ -2,14 +2,14 @@
 import React from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import Home from './Components/Home';
-import RechargeOptions from './pages/RechargeOptions';
-import RechargeDetail from './pages/RechargeDetail';
+import RechargeOptions from './Pages/RechargeOptions';
+import RechargeDetail from './Pages/RechargeDetail';
 import Task from './Components/Task';
 import Invite from './Components/Invite';
 import Me from './Components/Me';
 import Withdraw from './pages/Withdraw';
 import TransactionRecord from './Components/TransactionRecord';
-import ScrollToTop from './Components/ScrollToTop';
+import ScrollToTop from './Components/ScrolltoTop';
 import Support from './Components/Support';
 import { FaHome, FaClipboardList, FaUserPlus, FaUserCircle } from 'react-icons/fa';
 

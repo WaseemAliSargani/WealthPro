@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import HomeNav from './HomeNav';
 import { getUser } from '../api';
 import TransactionRecord from './TransactionRecord';
-import { removeUser } from '../utils/localStorage';
+import { removeUser } from '../Utils/LocalStorage';
 import { FaWallet, FaMoneyBillWave, FaReceipt, FaUserCircle } from 'react-icons/fa';
 
 const Me = () => {
@@ -92,7 +92,7 @@ const Me = () => {
                     <h2 className="text-3xl font-bold text-center mb-6">Common Problems</h2>
                     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-6 rounded-lg shadow-md">
                       <h3 className="text-xl font-semibold mb-2">Plan Activation Time</h3>
-                      <p className="text-gray-300">Your Plan will activate 1-5 hours afer confirmation your Txid</p>
+                      <p className="text-gray-300">Your Plan will activate 1-3 hours afer confirmation your Txid</p>
                     </div>
                     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-6 rounded-lg shadow-md">
                       <h3 className="text-xl font-semibold mb-2">How I can check my earnings?</h3>

@@ -7,7 +7,6 @@ import HomeOption from './HomeOption'
 import RechargeComponent from './RechargeComponent'
 import Plans from './Plans'
 
-
 const Home = () => {
   return (
     <div className='w-full px-4 bg-black'>
