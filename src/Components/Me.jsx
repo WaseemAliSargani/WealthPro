@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import HomeNav from './HomeNav';
 import { getUser } from '../api';
 import TransactionRecord from './TransactionRecord';
-import { removeUser } from '../Utils/LocalStorage';
+import { removeUser } from '../utils/localStorage';
 import { FaWallet, FaMoneyBillWave, FaReceipt, FaUserCircle } from 'react-icons/fa';
 
 const Me = () => {
