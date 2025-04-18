@@ -9,7 +9,7 @@ import Invite from './Components/Invite';
 import Me from './Components/Me';
 import Withdraw from './pages/Withdraw';
 import TransactionRecord from './Components/TransactionRecord';
-import ScrollToTop from './Components/ScrolltoTop';
+import ScrollToTop from './Components/ScrollToTop';
 import Support from './Components/Support';
 import { FaHome, FaClipboardList, FaUserPlus, FaUserCircle } from 'react-icons/fa';
 
