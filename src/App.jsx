@@ -2,8 +2,8 @@
 import React from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import Home from './Components/Home';
-import RechargeOptions from './Pages/RechargeOptions';
-import RechargeDetail from './Pages/RechargeDetail';
+import RechargeOptions from './pages/RechargeOptions';
+import RechargeDetail from './pages/RechargeDetail';
 import Task from './Components/Task';
 import Invite from './Components/Invite';
 import Me from './Components/Me';
