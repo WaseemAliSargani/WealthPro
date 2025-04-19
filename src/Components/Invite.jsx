@@ -65,7 +65,7 @@ const Invite = () => {
     return <div className="text-center text-[#efc99d] py-10">Loading...</div>;
   }
 
-  const inviteLink = `http://localhost:5173/signup?ref=${invitationCode}`;
+  const inviteLink = `https://wealth-pro.vercel.app/signup?ref=${invitationCode}`;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-[#efc99d] px-4 py-6">
@@ -204,7 +204,7 @@ const Invite = () => {
               ))}
             </ul>
           </section>
-          <section className="bg-gray-800/50 rounded-xl p-6 mb-10 shadow-lg">
+          <section className="mb-10">
             <h2 className="text-2xl font-bold text-[#efc99d] mb-4">👥 Example</h2>
             <p className="text-gray-200">Invite 10 friends:</p>
             <p className="text-[#efc99d] font-semibold text-2xl">Earn $50 instantly!</p>
