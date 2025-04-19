@@ -17,7 +17,7 @@ const HomeOption = () => {
     return (
         <div className=' w-full md:px-4 mb-6'>
             <div className="container mx-auto w-full bg-[#1e1f23] rounded-3xl px-20 py-8">
-                <div className='grid grid-cols-3 gap-x-28 md:gap-x-20 gap-y-12 flex-wrap'>
+                <div className='grid grid-cols-3 gap-x-[90px] md:gap-x-20 gap-y-12 flex-wrap'>
                     {/* 1 */}
                     <Link to={'/Recharge'} className='flex items-center justify-center flex-col gap-y-2'>
                         <div className='text-3xl bg-black/70 border border-[#efc99d] p-3 rounded-full'>
