@@ -1,7 +1,7 @@
 // src/Pages/Withdraw.jsx
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import HeroImg from '../assets/Blog/hero.webp';
+import HeroImg from '../assets/Investment/MainLogoURL.png';
 import {
   FaHome,
   FaClipboardList,
@@ -104,7 +104,7 @@ const Withdraw = () => {
             <div className="flex justify-between items-center">
               <div className="flex items-center font-medium">
                 <img className="w-[45px]" src={HeroImg} alt="" />
-                <h1>PK Company</h1>
+                <h1>WealthPro</h1>
               </div>
               <div className="flex items-center justify-center gap-x-2">
                 <div className="relative group bg-[#ffffff33] p-[7px] rounded-full cursor-pointer">
