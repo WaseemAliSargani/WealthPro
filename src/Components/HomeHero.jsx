@@ -32,7 +32,7 @@ const HomeHero = () => {
           spaceBetween={20}
           slidesPerView={1}
           autoplay={{ delay: 2500 }}
-          className="w-[100%] h-[400px] mx-auto rounded-xl"
+          className="w-[100%] h-[320px] mx-auto rounded-xl"
         >
           <div>
             {data.map((item, index) => {
