@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import HomeNav from './HomeNav';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { getUser } from '../api';
 
 const Invite = () => {
@@ -40,9 +40,10 @@ const Invite = () => {
       twitter: `https://twitter.com/intent/tweet?text=${encodedText}`,
       instagram: null,
       linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedLink}`,
+      whatsapp: `https://api.whatsapp.com/send?text=${encodedText}`,
     };
 
-    if (navigator.share && platform !== 'instagram') {
+    if (navigator.share && platform !== 'instagram' && platform !== 'whatsapp') {
       navigator
         .share({
           title: 'Invite Friends',
@@ -106,6 +107,7 @@ const Invite = () => {
               { Icon: FaTwitter, platform: 'twitter', color: '#1da1f2' },
               { Icon: FaInstagram, platform: 'instagram', color: '#e1306c' },
               { Icon: FaLinkedinIn, platform: 'linkedin', color: '#0a66c2' },
+              { Icon: FaWhatsapp, platform: 'whatsapp', color: '#25D366' },
             ].map(({ Icon, platform, color }, index) => (
               <button
                 key={index}
@@ -162,7 +164,7 @@ const Invite = () => {
                   key={index}
                   className="flex items-center gap-4 bg-gray-800/50 p-4 rounded-xl hover:bg-gray-800 transition-all duration-300"
                 >
-                  <span className="w-10 h-10 bg-gradient-to-r from-[#efc99d] to-[#d4a276] text-black rounded-full flex items-center justify-center font-bold">
+                  <span className="w-10 h-10 bg-gradient-to-r from-[#efc99d] to belső[#d4a276] text-black rounded-full flex items-center justify-center font-bold">
                     {index + 1}
                   </span>
                   <p>{step}</p>
