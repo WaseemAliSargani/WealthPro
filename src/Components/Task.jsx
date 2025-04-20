@@ -1,3 +1,4 @@
+// src/Components/Task.jsx
 import React, { useState, useEffect } from "react";
 import HomeNav from "./HomeNav";
 import bgimage from "../assets/Investment/BG.png";
@@ -17,16 +18,15 @@ const Task = () => {
   const fetchUserData = async () => {
     try {
       const userData = await getUser();
-      console.log('Task page - Fetched user data:', userData);
+      console.log('Task page - Fetched user data:', userData); // Debug log
       setUser(userData);
-      const now = new Date();
-      const twentyFourHours = 24 * 60 * 60 * 1000;
-      const hasEarned = userData.lastTaskDate && (now - new Date(userData.lastTaskDate)) < twentyFourHours;
+      const today = new Date().toDateString();
+      const hasEarned = userData.lastTaskDate && new Date(userData.lastTaskDate).toDateString() === today;
       setHasEarnedToday(hasEarned);
       setRemainingTasks(userData.plan && !hasEarned ? 1 : 0);
       setTotalRevenue(userData.balance || 0);
       setCompletedTasks(userData.completedTasks || []);
-      setTodayEarning(userData.todayEarning && userData.todayEarning.date === now.toDateString() ? userData.todayEarning.amount : 0);
+      setTodayEarning(userData.todayEarning && userData.todayEarning.date === today ? userData.todayEarning.amount : 0);
     } catch (error) {
       console.error("Error fetching user:", error.message);
       alert("Failed to load user data: " + error.message);
@@ -49,7 +49,6 @@ const Task = () => {
           setRemainingTasks(user.plan ? 1 : 0);
           setTimeLeft("24:00:00");
           setTodayEarning(0);
-          fetchUserData(); // Refresh user data when timer expires
         } else {
           const hours = Math.floor(diff / (1000 * 60 * 60));
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -77,14 +76,14 @@ const Task = () => {
       return;
     }
     if (hasEarnedToday || remainingTasks === 0) {
-      alert("Please wait until the 24-hour period ends.");
+      alert("Please wait until tomorrow.");
       return;
     }
     setIsProcessing(true);
     try {
-      console.log('Task - Attempting to complete task for user:', user.email);
+      console.log('Task - Attempting to complete task for user:', user.email); // Debug log
       const response = await completeTask();
-      console.log('Task - Response:', response);
+      console.log('Task - Response:', response); // Debug log
       setTodayEarning(response.todayEarning.amount);
       setTotalRevenue(response.balance);
       setHasEarnedToday(true);
@@ -240,7 +239,7 @@ const Task = () => {
               ) : (
                 <p className="text-gray-400 text-lg">
                   {user?.plan
-                    ? "Please wait until the 24-hour period ends."
+                    ? "Please wait until tomorrow."
                     : "Please activate a plan."}
                 </p>
               )}
