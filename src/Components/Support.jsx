@@ -5,7 +5,7 @@ import { FaWhatsapp, FaTelegram } from 'react-icons/fa';
 const Support = () => {
   // Social media links
   const whatsappLink = 'https://whatsapp.com/channel/0029VbAG4lXLSmbjmUAVyr3C';
-  const telegramLink = 'http://t.me/WealthProAdmin';
+  const telegramLink = '';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-[#efc99d] px-4 py-8 md:px-8 lg:px-16">
