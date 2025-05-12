@@ -4,7 +4,7 @@ import { FaWhatsapp, FaTelegram } from 'react-icons/fa';
 
 const Support = () => {
   // Social media links
-  const whatsappLink = 'https://whatsapp.com/channel/0029VbAG4lXLSmbjmUAVyr3C';
+  const whatsappLink = '';
   const telegramLink = '';
 
   return (
