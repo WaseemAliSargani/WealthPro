@@ -61,8 +61,8 @@ const Withdraw = () => {
     }
 
     const withdrawalAmount = parseFloat(amount);
-    if (withdrawalAmount < 30 || withdrawalAmount > 10000) {
-      alert('Mininum Withdrawal amount $30 - $10,000 USDT');
+    if (withdrawalAmount < 25 || withdrawalAmount > 10000) {
+      alert('Mininum Withdrawal amount $25 - $10,000 USDT');
       return;
     }
 
